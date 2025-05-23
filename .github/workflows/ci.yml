@@ -9,8 +9,9 @@ jobs:
         
       # 1. Cria setup Node
       - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          uses: 20.x
+          node-version: 20.x
           cache: 'npm' # Faz cache dos pacotes
 
       # . Etapa de instalação dependencia do projeto
